@@ -23,7 +23,8 @@ const AddComment = ({ asin }) => {
         body: JSON.stringify(comment),
         headers: {
           "Content-type": "application/json",
-          Authorization: "Bearer inserisci-qui-il-tuo-token",
+          Authorization:
+            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGRlODhmZTk2MDFiZjAwMTViNGE3NTQiLCJpYXQiOjE3NTk4NDIxMzIsImV4cCI6MTc2MTA1MTczMn0.YjOAGnvZ2ZfGuTHyk7QRivZA9UbHu9mzVN_0Zsm4aPU",
         },
       });
       if (response.ok) {
